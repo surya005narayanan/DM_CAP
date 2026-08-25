@@ -1,6 +1,5 @@
 import { Parser } from './parser';
 import { evaluate } from './evaluator';
-import type { Assignment } from './evaluator';
 import type { TruthTableRow } from './truthTable';
 
 export interface VerificationResult {
@@ -13,7 +12,7 @@ export function verifyNormalForms(
   pdnf: string,
   pcnf: string,
   rows: TruthTableRow[],
-  variables: string[]
+  _variables: string[]
 ): VerificationResult {
   if (pdnf === 'FALSE (Contradiction)' && pcnf === 'TRUE (Tautology)') {
       // These string constants are our edge cases. They can be validated statically or ignored.

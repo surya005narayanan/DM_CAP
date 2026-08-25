@@ -1,4 +1,3 @@
-import React from 'react';
 import { Beaker, BookOpen, Layers, Info } from 'lucide-react';
 
 interface HeaderProps {

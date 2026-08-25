@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { ArrowLeft, ToggleLeft, ToggleRight, CheckCircle, XCircle, User, ShieldCheck, AlertTriangle, ChevronDown, ChevronUp } from 'lucide-react';
 import { generateTruthTable, generateNormalForms, verifyNormalForms, Parser } from '../logic';
 
